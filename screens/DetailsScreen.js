@@ -21,8 +21,11 @@ export default function DetailsScreen() {
   const dayName = dayOfWeek[date.getDay()];
 
   return (
-    <View className="flex-1 items-center justify-evenly">
-      <View className="text-center">
+    <View
+      className="flex-1 items-center justify-evenly"
+      style={{ padding: 15 }}
+    >
+      <View className="flex-1 text-center">
         <Text className="font-semibold text-3xl text-center">{dayName}</Text>
         <Image
           source={{ uri: "https:" + item?.day?.condition?.icon }}
@@ -39,7 +42,7 @@ export default function DetailsScreen() {
         horizontal
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ paddingHorizontal: 15 }}
-        className="mt-2"
+        className="mt-12"
       >
         <View className="w-24 h-32 items-center justify-center space-y-3 py-3 border border-gray-500 rounded-lg bg-gray-500 mr-4">
           <FontAwesomeIcon icon={faDroplet} size={24} color="white" />
