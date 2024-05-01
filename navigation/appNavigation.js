@@ -24,9 +24,7 @@ export default function AppNavigation() {
           name="Details"
           component={DetailsScreen}
           options={{
-            title: "Details",
-            headerTintColor: "white",
-            headerStyle: { backgroundColor: "gray" },
+            headerShown: false,
           }}
         />
       </Stack.Navigator>
